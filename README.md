@@ -1,4 +1,4 @@
-# Data-Science-project-Credit_card_default
+# Data-Science-project-Credit_card_defaulters
 
 To build a classification methodology to determine whether a person defaults the credit card payment for the next month. 
 
