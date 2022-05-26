@@ -5,8 +5,8 @@ class Preprocessor:
     """
         This class shall  be used to clean and transform the data before training.
 
-        Written By: iNeuron Intelligence
         Version: 1.0
+
         Revisions: None
 
         """
@@ -18,12 +18,15 @@ class Preprocessor:
     def remove_unwanted_spaces(self,data):
         """
                         Method Name: remove_unwanted_spaces
+
                         Description: This method removes the unwanted spaces from a pandas dataframe.
+
                         Output: A pandas DataFrame after removing the spaces.
+
                         On Failure: Raise Exception
 
-                        Written By: iNeuron Intelligence
                         Version: 1.0
+
                         Revisions: None
 
                 """
@@ -47,12 +50,14 @@ class Preprocessor:
     def remove_columns(self,data,columns):
         """
                 Method Name: remove_columns
+
                 Description: This method removes the given columns from a pandas dataframe.
                 Output: A pandas DataFrame after removing the specified columns.
+
                 On Failure: Raise Exception
 
-                Written By: iNeuron Intelligence
                 Version: 1.0
+
                 Revisions: None
 
         """
@@ -73,12 +78,17 @@ class Preprocessor:
     def separate_label_feature(self, data, label_column_name):
         """
                         Method Name: separate_label_feature
+
                         Description: This method separates the features and a Label Coulmns.
-                        Output: Returns two separate Dataframes, one containing features and the other containing Labels .
+
+                        Output: Returns two separate Dataframes, one containing features and the other containing Labels
+
                         On Failure: Raise Exception
 
                         Written By: iNeuron Intelligence
+
                         Version: 1.0
+
                         Revisions: None
 
                 """
@@ -97,13 +107,16 @@ class Preprocessor:
     def is_null_present(self,data):
         """
                                 Method Name: is_null_present
+
                                 Description: This method checks whether there are null values present in the pandas Dataframe or not.
+
                                 Output: Returns True if null values are present in the DataFrame, False if they are not present and
                                         returns the list of columns for which null values are present.
+
                                 On Failure: Raise Exception
 
-                                Written By: iNeuron Intelligence
                                 Version: 1.0
+
                                 Revisions: None
 
                         """
@@ -132,12 +145,15 @@ class Preprocessor:
     def impute_missing_values(self, data, cols_with_missing_values):
         """
                                         Method Name: impute_missing_values
+
                                         Description: This method replaces all the missing values in the Dataframe using KNN Imputer.
+                                        
                                         Output: A Dataframe which has all the missing values imputed.
+                                        
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
                                         Version: 1.0
+                                        
                                         Revisions: None
                      """
         self.logger_object.log(self.file_object, 'Entered the impute_missing_values method of the Preprocessor class')
@@ -156,12 +172,15 @@ class Preprocessor:
     def scale_numerical_columns(self,data):
         """
                                                         Method Name: scale_numerical_columns
+                                                        
                                                         Description: This method scales the numerical values using the Standard scaler.
+                                                        
                                                         Output: A dataframe with scaled
+                                                        
                                                         On Failure: Raise Exception
 
-                                                        Written By: iNeuron Intelligence
                                                         Version: 1.0
+                                                        
                                                         Revisions: None
                                      """
         self.logger_object.log(self.file_object,
@@ -186,12 +205,15 @@ class Preprocessor:
     def encode_categorical_columns(self,data):
         """
                                                 Method Name: encode_categorical_columns
+                                                
                                                 Description: This method encodes the categorical values to numeric values.
+                                                
                                                 Output: only the columns with categorical values converted to numerical values
+                                                
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
                                                 Version: 1.0
+                                                
                                                 Revisions: None
                              """
         self.logger_object.log(self.file_object, 'Entered the encode_categorical_columns method of the Preprocessor class')
@@ -215,12 +237,15 @@ class Preprocessor:
     def handle_imbalanced_dataset(self,x,y):
         """
         Method Name: handle_imbalanced_dataset
+        
         Description: This method handles the imbalanced dataset to make it a balanced one.
+        
         Output: new balanced feature and target columns
+        
         On Failure: Raise Exception
 
-        Written By: iNeuron Intelligence
         Version: 1.0
+        
         Revisions: None
                                      """
         self.logger_object.log(self.file_object,

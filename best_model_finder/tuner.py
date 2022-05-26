@@ -6,8 +6,9 @@ from sklearn.metrics  import roc_auc_score,accuracy_score
 class Model_Finder:
     """
                 This class shall  be used to find the model with best accuracy and AUC score.
-                Written By: iNeuron Intelligence
+                
                 Version: 1.0
+
                 Revisions: None
 
                 """
@@ -21,13 +22,16 @@ class Model_Finder:
     def get_best_params_for_naive_bayes(self,train_x,train_y):
         """
         Method Name: get_best_params_for_naive_bayes
+        
         Description: get the parameters for the Naive Bayes's Algorithm which give the best accuracy.
                      Use Hyper Parameter Tuning.
+        
         Output: The model with the best parameters
+        
         On Failure: Raise Exception
-
-        Written By: iNeuron Intelligence
+      
         Version: 1.0
+        
         Revisions: None
 
                         """
@@ -65,13 +69,16 @@ class Model_Finder:
 
         """
                                         Method Name: get_best_params_for_xgboost
+
                                         Description: get the parameters for XGBoost Algorithm which give the best accuracy.
                                                      Use Hyper Parameter Tuning.
-                                        Output: The model with the best parameters
-                                        On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
+                                        Output: The model with the best parameters
+
+                                        On Failure: Raise Exception
+                                    
                                         Version: 1.0
+
                                         Revisions: None
 
                                 """
@@ -116,12 +123,15 @@ class Model_Finder:
     def get_best_model(self,train_x,train_y,test_x,test_y):
         """
                                                 Method Name: get_best_model
-                                                Description: Find out the Model which has the best AUC score.
-                                                Output: The best model name and the model object
-                                                On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
+                                                Description: Find out the Model which has the best AUC score.
+
+                                                Output: The best model name and the model object
+
+                                                On Failure: Raise Exception
+                                              
                                                 Version: 1.0
+
                                                 Revisions: None
 
                                         """
@@ -148,7 +158,7 @@ class Model_Finder:
                 self.logger_object.log(self.file_object, 'Accuracy for NB:' + str(self.naive_bayes_score))
             else:
                 self.naive_bayes_score = roc_auc_score(test_y, self.prediction_naive_bayes) # AUC for Random Forest
-                self.logger_object.log(self.file_object, 'AUC for RF:' + str(self.naive_bayes_score))
+                self.logger_object.log(self.file_object, 'AUC for NB:' + str(self.naive_bayes_score))
 
             #comparing the two models
             if(self.naive_bayes_score <  self.xgboost_score):

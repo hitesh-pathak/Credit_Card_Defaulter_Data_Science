@@ -11,8 +11,8 @@ class dBOperation:
     """
           This class shall be used for handling all the SQL operations.
 
-          Written By: iNeuron Intelligence
           Version: 1.0
+
           Revisions: None
 
           """
@@ -28,12 +28,14 @@ class dBOperation:
 
         """
                         Method Name: dataBaseConnection
+
                         Description: This method creates the database with the given name and if Database already exists then opens the connection to the DB.
                         Output: Connection to the DB
+
                         On Failure: Raise ConnectionError
 
-                         Written By: iNeuron Intelligence
                         Version: 1.0
+
                         Revisions: None
 
                         """
@@ -54,12 +56,14 @@ class dBOperation:
 
         """
            Method Name: createTableDb
+
            Description: This method creates a table in the given database which will be used to insert the Good data after raw data validation.
            Output: None
+
            On Failure: Raise Exception
 
-            Written By: iNeuron Intelligence
            Version: 1.0
+
            Revisions: None
 
         """
@@ -104,13 +108,15 @@ class dBOperation:
 
         """
                                        Method Name: insertIntoTableGoodData
+
                                        Description: This method inserts the Good data files from the Good_Raw folder into the
                                                     above created table.
                                        Output: None
+
                                        On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
                                        Version: 1.0
+
                                        Revisions: None
 
                 """
@@ -154,13 +160,16 @@ class dBOperation:
 
         """
                                        Method Name: selectingDatafromtableintocsv
+
                                        Description: This method exports the data in GoodData table as a CSV file. in a given location.
-                                                    above created .
+                                                    above created.
+
                                        Output: None
+
                                        On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
                                        Version: 1.0
+                                       
                                        Revisions: None
 
                 """
