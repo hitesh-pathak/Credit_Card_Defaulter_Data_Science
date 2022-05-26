@@ -52,6 +52,6 @@ Files would be saved in Prediction_Output_File
 
 ### Architechture
 
-![flowchart.jpeg](flowchart.jpeg)arch
+![flowchart.jpg](flowchart.jpg)arch
 
 
