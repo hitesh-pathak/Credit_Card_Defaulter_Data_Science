@@ -46,7 +46,7 @@ Run main.py.
 
 >On local UI/Browser Input filepath: Prediction_Batch_files
 
->On Postman use: {"filepath":"Prediction_Batch_files"}
+>On Postman use: {"filepath":"Prediction_Batch_files"} for prediction and {"filepath":"Training_Batch_Files"} for training
 
 Files would be saved in Prediction_Output_File
 
